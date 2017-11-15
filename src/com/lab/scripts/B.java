@@ -1,5 +1,8 @@
 package com.lab.scripts;
 
+import java.util.Map;
+import java.util.Map.Entry;
+
 public class B {
     public B() {
         System.out.println(" constructor B ");
@@ -10,6 +13,7 @@ public class B {
 
     class Inner {
         {
+            B bb = new B();
             System.out.println(" init Inner ");
         }
         public Inner() {            
