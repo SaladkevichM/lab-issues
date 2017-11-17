@@ -1,7 +1,16 @@
 package com.lab.scripts;
 
+import sun.reflect.generics.tree.Tree;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * При использование выражения: String s1 = ""; - в пуле создаётся запись "", при повторном вызове: String s2=""; -
@@ -14,6 +23,43 @@ import java.lang.reflect.Method;
  */
 
 public class EqualsGames {
+
+    public int equalizer;
+
+    public boolean equals(EqualsGames o) {
+        if (o == null) {
+            return false;
+        }
+        if (o.equalizer == this.equalizer) {
+            return true;
+        }
+        return false;
+    }
+
+    public EqualsGames clone() {
+        EqualsGames clone = new EqualsGames();
+        clone.equalizer = this.equalizer;
+        return clone;
+    }
+    
+    static int fact(int num) {
+        if (num == 0) return 1;
+        return num * fact(num - 1);
+    }
+    
+    static int factorial(int n)
+    {
+        int ret = 1;
+        for (int i = 1; i <= n; i++) {
+            ret = ret * i; 
+        } 
+        return ret;
+    }
+    
+    void m3() {        
+                     
+        
+    }
 
     void m1() {
 
@@ -31,8 +77,14 @@ public class EqualsGames {
 
         System.out.println(s1.hashCode() + " ^ " + s2.hashCode());
         System.out.println(s1.hashCode() + " ^ " + s3.hashCode());
+    }
 
-        System.out.println();
+    void m2() throws Throwable {
+
+        EqualsGames games = new EqualsGames();
+        System.out.println(games == games.clone());
+        System.out.println(games.equals(games.clone()));
+        games.finalize();
 
     }
 
@@ -40,13 +92,19 @@ public class EqualsGames {
             throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 
         EqualsGames eg = new EqualsGames();
+        eg.hashCode();
         Method[] methods = eg.getClass().getDeclaredMethods();
 
         for (Method me : methods) {
-            if (me.getName() != "main") {
+            if (!Arrays.asList("equals", "clone", "main", "fact", "factorial").contains(me.getName())) {                
+                System.out.println();
+                System.out.println("method:" + me.getName());
                 me.invoke(eg);
+                System.out.println();
             }
         }
+        
+        System.out.println(factorial(5)); 
 
     }
 

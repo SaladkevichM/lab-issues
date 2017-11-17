@@ -6,8 +6,17 @@ import java.util.Vector;
 
 public class EnumGames {
 
-    enum CarsMore {
-        AUDI, VOLVO;             
+    enum CarsMore implements Comparable<CarsMore> {
+        
+       
+        AUDI, VOLVO;         
+        
+        public int compareTo(CarsMore o1, CarsMore o2) {
+                        
+            
+            return 0;            
+        }
+        
     }
     
     enum Cars {
