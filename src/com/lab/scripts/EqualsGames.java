@@ -47,6 +47,31 @@ public class EqualsGames {
         return num * fact(num - 1);
     }
     
+    static void fib(int count) {
+        int i=1;
+        int num1 = 0, num2 = 1;
+        while(i<=count)
+        {
+            System.out.print(num1+" ");
+            int sumOfPrevTwo = num1 + num2;
+            num1 = num2;
+            num2 = sumOfPrevTwo;
+            i++;
+        }
+    }
+    
+    static void fibM(int n) {        
+       int[] sequence = new int[n];   
+       for(int i = 0; i < n; i++) {
+          if(i > 1) {         
+              sequence[i] = sequence[i - 1] + sequence[i - 2];
+          } else {
+              sequence[i] = i;
+          }
+       }
+       System.out.println(Arrays.toString(sequence));
+    }
+    
     static int factorial(int n)
     {
         int ret = 1;
@@ -96,7 +121,7 @@ public class EqualsGames {
         Method[] methods = eg.getClass().getDeclaredMethods();
 
         for (Method me : methods) {
-            if (!Arrays.asList("equals", "clone", "main", "fact", "factorial").contains(me.getName())) {                
+            if (!Arrays.asList("equals", "clone", "main", "fact", "factorial", "fibM", "fib").contains(me.getName())) {                
                 System.out.println();
                 System.out.println("method:" + me.getName());
                 me.invoke(eg);
@@ -104,7 +129,8 @@ public class EqualsGames {
             }
         }
         
-        System.out.println(factorial(5)); 
+        fibM(10); 
+        fib(10);
 
     }
 

@@ -5,19 +5,21 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class LHM {
-
+public class LHM {        
+    
     public static void main(String args[]) {
         // HashMap Declaration
-        LinkedHashMap<Integer, String> lhmap = new LinkedHashMap<Integer, String>();
-
+        LinkedHashMap<Integer, String> lhmap = new LinkedHashMap<Integer, String>();        
+        
         // Adding elements to LinkedHashMap
         lhmap.put(22, "Abey");
         lhmap.put(33, "Dawn");
         lhmap.put(1, "Sherry");
         lhmap.put(2, "Karon");
-        lhmap.put(100, "Jim");
+        lhmap.put(100, "Jim");        
 
+        System.out.println(lhmap);
+        
         // Generating a Set of entries
         Set set = lhmap.entrySet();
 
@@ -25,8 +27,15 @@ public class LHM {
         Iterator iterator = set.iterator();
         while (iterator.hasNext()) {
             Map.Entry me = (Map.Entry) iterator.next();
-            System.out.print("Key is: " + me.getKey() + "& Value is: " + me.getValue() + "\n");
+            iterator.remove();
         }
+        
+        Boolean is_success = false;
+        assert is_success;
+        
+        System.out.println(lhmap);
+        
+        
         
     }
 }
