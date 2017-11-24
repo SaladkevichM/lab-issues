@@ -1,4 +1,4 @@
-package com.lab.scripts;
+package com.lab.tasks;
 
 /**
  * Count the number of prime numbers less than a non-negative number, n.

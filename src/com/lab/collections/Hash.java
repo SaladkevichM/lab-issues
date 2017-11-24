@@ -1,4 +1,4 @@
-package com.lab.scripts;
+package com.lab.collections;
 
 public class Hash {
 

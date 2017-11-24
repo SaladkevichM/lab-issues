@@ -1,4 +1,4 @@
-package com.lab.scripts;
+package com.lab.collections;
 
 import java.util.PriorityQueue;
 import java.util.Queue;

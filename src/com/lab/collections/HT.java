@@ -1,4 +1,4 @@
-package com.lab.scripts;
+package com.lab.collections;
 
 import java.util.Enumeration;
 import java.util.Hashtable;

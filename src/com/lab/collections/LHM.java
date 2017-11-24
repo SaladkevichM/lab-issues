@@ -1,5 +1,6 @@
-package com.lab.scripts;
+package com.lab.collections;
 
+import java.io.Closeable;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -17,7 +18,7 @@ public class LHM {
         lhmap.put(1, "Sherry");
         lhmap.put(2, "Karon");
         lhmap.put(100, "Jim");        
-
+        
         System.out.println(lhmap);
         
         // Generating a Set of entries

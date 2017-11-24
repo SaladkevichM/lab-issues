@@ -1,4 +1,4 @@
-package com.lab.scripts;
+package com.lab.tasks;
 
 public class ReverseString {
 
