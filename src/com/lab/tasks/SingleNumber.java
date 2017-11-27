@@ -35,9 +35,9 @@ public class SingleNumber {
     
     public static void main(String[] args) {
         
-       int[] a = {2, 1, 2};  
+       int[] a = {2, 2, 1, 3, 3};  
        
-        System.out.println(singleNumber(a)); 
+       singleNumber(a); 
        // System.out.println(singleNum(a));       
        
     }

@@ -4,7 +4,12 @@ public class StringGames {
 
     public static void main(String[] args) {
         
-        System.out.println(Thread.currentThread().getName());
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            // We've been interrupted: no more messages.
+           System.out.println("1111");
+        }
         
         String s1 = "1";
         String s2 = "1";
