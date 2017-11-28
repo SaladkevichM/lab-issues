@@ -25,8 +25,8 @@ public class TwoSum {
     }
     
     public static void main(String[] args) {        
-        int[] a = {27, 2, 7, 76};  
-        System.out.println(Arrays.toString(twoSum(a, 9)));
+        int[] a = {1, 4, 7, 1};  
+        System.out.println(Arrays.toString(twoSum(a, 2)));
     }
 
 }

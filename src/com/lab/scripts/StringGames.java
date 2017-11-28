@@ -4,12 +4,13 @@ public class StringGames {
 
     public static void main(String[] args) {
         
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            // We've been interrupted: no more messages.
-           System.out.println("1111");
-        }
+        char[] d = new char[-100];
+        
+        String e = "111";
+        String ee = "1" + "1" + "1";
+        String eee = new String("111");
+        
+        System.out.println(ee == eee);        
         
         String s1 = "1";
         String s2 = "1";
@@ -25,6 +26,7 @@ public class StringGames {
 
         System.out.println(s1.hashCode() + " ^ " + s2.hashCode());
         System.out.println(s1.hashCode() + " ^ " + s3.hashCode());
+        
         
     }
 
