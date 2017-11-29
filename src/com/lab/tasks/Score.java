@@ -9,9 +9,9 @@ public class Score {
         
         int score = 0;        
         
-        String cardsSeq = "23456789TJKA";
+        final String cardsSeq = "23456789TJKA";
         Map<Character, Integer> cards = new HashMap<>();
-        
+
         char[] playerOne = s1.toCharArray();
         char[] playerTwo = s2.toCharArray();
         

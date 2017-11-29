@@ -2,9 +2,7 @@ package com.lab.scripts;
 
 public class StringGames {
 
-    public static void main(String[] args) {
-        
-        char[] d = new char[-100];
+    public static void main(String[] args) {                             
         
         String e = "111";
         String ee = "1" + "1" + "1";
@@ -26,8 +24,7 @@ public class StringGames {
 
         System.out.println(s1.hashCode() + " ^ " + s2.hashCode());
         System.out.println(s1.hashCode() + " ^ " + s3.hashCode());
-        
-        
+                
     }
 
 }

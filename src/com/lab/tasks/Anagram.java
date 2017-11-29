@@ -1,19 +1,13 @@
 package com.lab.tasks;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Anagram implements Comparable<Anagram> {
 
     public static boolean isAnagram(String s, String t) {
-        
-        List<String> bList = new ArrayList<String>();
-        Map<String, String> map = new HashMap<String, String>();
         
         List<Character> in = s.chars().mapToObj(e -> (char) e).collect(Collectors.toList());
         List<Character> out = s.chars().mapToObj(e -> (char) e).collect(Collectors.toList());
@@ -48,6 +42,8 @@ public class Anagram implements Comparable<Anagram> {
         System.out.println(System.currentTimeMillis());
 
     }
+    
+    
 
     @Override
     public int compareTo(Anagram o) {

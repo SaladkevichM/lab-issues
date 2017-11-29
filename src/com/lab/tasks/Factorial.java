@@ -9,7 +9,7 @@ public class Factorial {
             return 1;
         return num * fact(num - 1);
     }
-
+    
     static void fibM(int n) {
         int[] sequence = new int[n];
         for (int i = 0; i < n; i++) {
@@ -32,8 +32,17 @@ public class Factorial {
 
     public static void main(String[] args) {
 
-        System.out.println(fact(5));
-
+        long time = System.nanoTime();
+        fact(5);
+        time = System.nanoTime() - time;
+        
+        System.out.println(time);
+        
+        time = System.nanoTime();
+        factorial(5);
+        time = System.nanoTime() - time;
+        
+        System.out.println(time);
     }
 
 }
