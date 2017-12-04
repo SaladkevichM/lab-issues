@@ -41,9 +41,7 @@ public class Anagram implements Comparable<Anagram> {
         System.out.println(isAnagramTrue("anagram", "nagaram"));
         System.out.println(System.currentTimeMillis());
 
-    }
-    
-    
+    }       
 
     @Override
     public int compareTo(Anagram o) {

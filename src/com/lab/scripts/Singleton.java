@@ -1,9 +1,5 @@
 package com.lab.scripts;
 
-import sun.management.Agent;
-
-import java.io.Externalizable;
-
 public final class Singleton {
     
     private static volatile Singleton instance;
@@ -27,7 +23,6 @@ public final class Singleton {
     public static void main(String ...strings) {
         Singleton s = Singleton.getInstance("1");        
         ESingleton.INSTANCE.doTask();
-        String string = new String("");
     }
     
 }

@@ -64,18 +64,14 @@ public class SimpleThreads {
         // loop until MessageLoop
         // thread exits
         while (t.isAlive()) {
+            
             threadMessage("Still waiting...");
+            
             // Wait maximum of 1 second
             // for MessageLoop thread
             // to finish.
             t.join(1000);
-            if (((System.currentTimeMillis() - startTime) > patience) && t.isAlive()) {
-                threadMessage("Tired of waiting!");
-                t.interrupt();
-                // Shouldn't be long now
-                // -- wait indefinitely
-                t.join();
-            }
+
         }
         threadMessage("Finally!");
     }
