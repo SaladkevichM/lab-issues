@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Anagram implements Comparable<Anagram> {
-
+    
     public static boolean isAnagram(String s, String t) {
         
         List<Character> in = s.chars().mapToObj(e -> (char) e).collect(Collectors.toList());

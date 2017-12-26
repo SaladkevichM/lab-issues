@@ -64,9 +64,9 @@ public class SimpleThreads {
         // loop until MessageLoop
         // thread exits
         while (t.isAlive()) {
-            
+
             threadMessage("Still waiting...");
-            
+
             // Wait maximum of 1 second
             // for MessageLoop thread
             // to finish.
