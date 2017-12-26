@@ -21,11 +21,7 @@ public class Hash {
         int one = hash(100001);
         int two = hash(100002);
         int three = hash(100003);
-        
-//        System.out.println(hash(100001));
-//        System.out.println(hash(100002));
-//        System.out.println(hash(100003));
-        
+
         System.out.println(Integer.toBinaryString(one));
         System.out.println(Integer.toBinaryString(two));
         System.out.println(Integer.toBinaryString(three));

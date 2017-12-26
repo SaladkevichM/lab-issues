@@ -1,7 +1,5 @@
 package com.lab.scripts;
 
-import java.lang.reflect.Modifier;
-
 public class Outer {
 
     private String text = "I am Outer private!";

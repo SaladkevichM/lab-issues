@@ -1,6 +1,5 @@
 package com.lab.collections;
 
-import java.io.Closeable;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;

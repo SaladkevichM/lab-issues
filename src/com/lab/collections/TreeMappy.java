@@ -1,13 +1,8 @@
 package com.lab.collections;
 
 
-import java.util.ArrayList;
-import java.util.Deque;
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
-import java.util.Queue;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.WeakHashMap;
@@ -22,12 +17,13 @@ public class TreeMappy {
         Map map = new WeakHashMap(); 
         Object obj = new Object(); // создаём объект 
         map.put(obj, "object"); // кладём его в мапу 
-        System.out.println(map.size()); // в мапе один элемент 
+        System.out.println(map.size()); // в мапе один элемент
+        
         obj = null; // чистим ссылку 
         System.gc(); // играемся со сборщиком мусора 
         System.runFinalization(); 
-        System.out.println(map.size()); // мапа должна стать пустой 
-
+        System.out.println(map.size()); // мапа должна стать пустой        
+        
         
         /* Adding elements to TreeMap */
         tmap.put(1, "Data1");
