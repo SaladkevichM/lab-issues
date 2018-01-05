@@ -13,9 +13,9 @@ public class DaysWeight {
 
     }
 
-    public static int bestDay(int[] days, int m) {
+    public static int bestDay(int[] days, int daysCount) {
 
-        int bitmask = getMask(m);
+        int bitmask = getMask(daysCount);
         Map<Integer, Integer> result = new HashMap<>();
 
         for (int i = 0; i < days.length; i++) {

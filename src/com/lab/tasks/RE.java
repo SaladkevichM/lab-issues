@@ -4,6 +4,18 @@ import java.util.Arrays;
 
 public class RE {
 
+    public final int g;
+    public int gg;
+    
+    {
+        
+    }
+    
+    public RE() {
+        g = 1;
+        gg = 2;
+    }
+    
     public static void main(String[] args) {
         // System.out.println(fact(5));
         System.out.println(factCycle(5));

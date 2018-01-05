@@ -1,6 +1,20 @@
 package com.lab.scripts;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public final class Singleton {
+    
+    @XmlElement
+    public static Test instance = new Test();
+
+    @XmlElement
+    private String name;
+
+    public Singleton() {
+        name = "some_value";
+    }
     
     /*
      * 
