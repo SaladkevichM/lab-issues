@@ -1,2 +1,4 @@
 /target/
 /.gradle/
+/.externalToolBuilders/
+/.gradle/4.3/
