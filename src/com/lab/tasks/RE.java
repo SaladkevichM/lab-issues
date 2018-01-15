@@ -18,11 +18,21 @@ public class RE {
     
     public static void main(String[] args) {
         // System.out.println(fact(5));
-        System.out.println(factCycle(5));
+       // System.out.println(factCycle(5));
         // fi(10);
         // sortArray(new int[] { 4,7,2,4,742345,56});
+        
+        System.out.println(fibonacci(6));
     }
-
+    
+    public static int fibonacci(int n)  {
+        if(n == 0)
+            return 0;
+        else if(n == 1)
+          return 1;
+       else
+          return fibonacci(n - 1) + fibonacci(n - 2);
+    }
 
     public static void sortArray(int[] x) {
 

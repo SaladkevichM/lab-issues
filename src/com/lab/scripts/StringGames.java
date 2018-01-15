@@ -4,6 +4,8 @@ public class StringGames {
 
     public static void main(String[] args) {                             
         
+        System.out.println(System.getProperty("java.version"));
+        
         String e = "111";
         String ee = "1" + "1" + "1";
         String eee = new String("111");
